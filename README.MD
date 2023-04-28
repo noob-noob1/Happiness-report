@@ -32,6 +32,18 @@ Feature understanding as well as feaure realtionships were explored visually mak
 <img src="Read_me_Images/Corrolation.png"  width="500" height=400>   &nbsp; &nbsp; &nbsp; &nbsp; <img src="Read_me_Images/Regression.png"  width="400" height=400> 
 
 ---
+# Model Building 
+
+Many different models were explored, below are the results in MAE
+
+Linear Regression = 0.2861
+Lasso Regression = 0.5625
+Ridge Regression = 0.4047
+Random Forest = 0.2675
+Adaboost with RF as estimator = 0.2574
+Support vector regressor = 0.2819
+
+**important note**: eventhough adaboost with RF scored the best, it was not chosen for deployement as it proved too CPU intensive and time consuming for my personal machine.
 
 
 
