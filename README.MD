@@ -18,6 +18,7 @@ pip install -r requirements1.txt
 ``` 
 
 4. **videos used**  https://www.youtube.com/watch?v=WLwjvWq0GWA
+5. **CSV source with variable explaniation** https://www.kaggle.com/datasets/usamabuttar/world-happiness-report-2005-present 
 ---
 #3. Data cleaning
 - Renamed column names to more compatible ones with python
@@ -34,16 +35,28 @@ Feature understanding as well as feaure realtionships were explored visually mak
 ---
 # Model Building 
 
-Many different models were explored, below are the results in MAE
+Many different models were explored and fine tunned. Below are the results in MAE of ladder.
 
-Linear Regression = 0.2861
-Lasso Regression = 0.5625
-Ridge Regression = 0.4047
-Random Forest = 0.2675
-Adaboost with RF as estimator = 0.2574
-Support vector regressor = 0.2819
+- Linear Regression = 0.2861
+- Lasso Regression = 0.5625
+- Ridge Regression = 0.4047
+- Random Forest = 0.2675
+- Adaboost with RF as estimator = 0.2574
+- Support vector regressor = 0.2819
 
-**important note**: eventhough adaboost with RF scored the best, it was not chosen for deployement as it proved too CPU intensive and time consuming for my personal machine.
+**important note**: eventhough adaboost with RF scored the best, it was not chosen for deployement as it proved too CPU intensive and time consuming for my personal machine. Hence, second best model which is random forest was used.
+
+---
+# Model deployment 
+
+After the model pipeline was serialized, a web app was created using **streamlit**.
+**to use the app**
+1. open your terminal 
+2. navigate to this project 
+3. ```sh
+    streamlit run Model-deployment.py
+    ```
+
 
 
 
