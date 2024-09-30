@@ -1,12 +1,12 @@
 # World Happiness Report Life Ladder Estimator:
 # 1. Project Overview:
 - Created a ML tool the predicts life satisfaction score known as "life ladder" (MAE = 0.268 where 10 is a perfect life) 
-- Linear regression, Lasso regression, ridge regression, Random forest, Adaboost with different weak-learners, and SVM were explored
+- Linear regression, Lasso regression, ridge regression, Random forest, AdaBoost with different weak-learners, and SVM were explored
 
 - Optimized parameters using GridsearchCV
 - Made preprocessing by creating a pipeline
 - Created a streamlit web app as frontend 
-- The second best model (random forest) was chosen over the best model (Adaboost with random forest) as the best model proved taxing for the performance of my personal machine
+- The second best model (random forest) was chosen over the best model (AdaBoost with random forest) as the best model proved taxing for the performance of my personal machine
 ---
 # 2. Code and Recourses:
 1. **Python Version** = Python 3.11.1
