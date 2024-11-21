@@ -1,6 +1,6 @@
 # World Happiness Report Life Ladder Estimator:
 # 1. Project Overview:
-- Created a ML tool the predicts life satisfaction score known as "life ladder" (MAE = 0.268 where 10 is a perfect life) 
+- Created a ML tool that predicts life satisfaction score known as "life ladder" (MAE = 0.268 where 10 is a perfect life) 
 - Linear regression, Lasso regression, ridge regression, Random Forest, AdaBoost with different weak-learners, and SVM were explored
 
 - Optimized parameters using GridsearchCV
